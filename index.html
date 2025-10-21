@@ -11,7 +11,7 @@
             margin-bottom: 100px;
 
         }
-
+        
         #Ejemplo1 {
             width: 200px;
             height: 200px;
@@ -36,6 +36,18 @@
             background-color: purple;
         }
 
+        #Ejemplo5 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        #Ejemplo6 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
         /* esta es la vista default de los elementos html */
         .bloque div {
             display: block;
@@ -49,92 +61,177 @@
         .enTabla div {
             display: table-cell;
         }
+
+        
+		#relativo{
+               position: relative;
+               left: 300px;
+
+          }
+
+
+		
+		#absoluto{
+               position: absolute;
+               right: 500px;
+          }
+
+		
+		#fijo{
+               position: fixed;
+               background: blue;
+               color: white;
+               right: 10px;
+               top: 20px;
+
+          }
+
+
+		
+          .flotante{
+               height: 400px;
+               width: 100%; 
+
+          }
+          
+          .flotante div{
+               float: left;
+          }
+
+          .flotante div:nth-child(2){
+               float: right;
+          }
     </style>
 
 </head>
+
 <body>
-    
+
+    <!-- elementos en bloque -->
     <div id="contenedorPadre" class="bloque">
 
         <div id="Ejemplo1">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
 
-    <div id="Ejemplo2">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+        <div id="Ejemplo2">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
     
-    <div id="Ejemplo3">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
+        <div id="Ejemplo3">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
+
+        <div id="Ejemplo4">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
+
     </div>
 
-    <div id="Ejemplo4">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
-
-    </div>
-
+    <!-- elementos en linea -->
     <div id="contenedorPadre" class="enLinea">
 
         <div id="Ejemplo1">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
 
-    <div id="Ejemplo2">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+        <div id="Ejemplo2">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
     
-    <div id="Ejemplo3">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
+        <div id="Ejemplo3">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
+
+        <div id="Ejemplo4">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
+
     </div>
 
-    <div id="Ejemplo4">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
-
-    </div>
-
+    <!-- elementos en tabla -->
     <div id="contenedorPadre" class="enTabla">
 
         <div id="Ejemplo1">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
 
-    <div id="Ejemplo2">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+        <div id="Ejemplo2">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
     
-    <div id="Ejemplo3">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
+        <div id="Ejemplo3">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
+
+        <div id="Ejemplo4">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
+            </p>
+        </div>
+
     </div>
 
-    <div id="Ejemplo4">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae suscipit, earum deserunt nobis molestiae officiis quod corporis aliquam error aperiam officia, placeat voluptates eum inventore natus numquam impedit libero?
-        </p>
-    </div>
+        <!-- posicionamiento relativo, absoluto y fijo -->
+        <div id="contenedorPadre" class="posicionamiento">
+            <div class="posicionamiento">
+                <div id="Ejemplo1" id="relativo">
+                    <p> Relativo </p>
+                </div>
+                <div id="Ejemplo2" id="absoluto">
+                    <p> Absoluto </p>
+                </div>
+                <div id="Ejemplo3" id="fijo">
+                    <p> Fijo </p>
+                </div>	
+            </div>
+        </div>
+
+        <!-- posicionamiento flotante -->
+        <div id="contenedorPadre" class="posicionamientoFlotante">
+            <div class="flotante">
+                <div id="Ejemplo1">
+                    <p> Primero </p>
+                </div>
+                <div id="Ejemplo2"> 
+                    <p> Segundo </p>
+                </div>
+                <div id="Ejemplo3">
+                    <p> Tercero </p>
+                </div>	
+                <div id="Ejemplo4">
+                    <p> Cuarto </p>
+                </div>	
+                <div id="Ejemplo5">
+                    <p> Quinto </p>
+                </div>	
+                <div id="Ejemplo6">
+                    <p> Sexto </p>
+                </div>
+            </div>
+        </div>	
 
     </div>
 
